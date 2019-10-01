@@ -46,4 +46,43 @@
 
         Me.text_box_suma.Text = C
     End Sub
+
+    Protected Sub mas_Click(sender As Object, e As EventArgs) Handles mas.Click
+        Dim A = Val(operando_1.Text)
+        Dim B = Val(operando_2.Text)
+        Dim C = A + B
+        Me.resultado.Text = C
+    End Sub
+
+    Protected Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Dim A = Val(operando_1.Text)
+        Dim B = Val(operando_2.Text)
+        Dim C = A - B
+        Me.resultado.Text = C
+    End Sub
+
+    Protected Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Dim A = Val(operando_1.Text)
+        Dim B = Val(operando_2.Text)
+        Dim C = A Mod B
+        Me.resultado.Text = C
+    End Sub
+
+    Protected Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Dim A = Val(operando_1.Text)
+        Dim B = Val(operando_2.Text)
+        Dim C = A * B
+        Me.resultado.Text = C
+    End Sub
+
+    Protected Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Dim A = Val(operando_1.Text)
+        Dim B = Val(operando_2.Text)
+        Dim C = A / B
+        Me.resultado.Text = C
+    End Sub
+
+    Protected Sub operando_2_TextChanged(sender As Object, e As EventArgs) Handles operando_2.TextChanged
+
+    End Sub
 End Class
