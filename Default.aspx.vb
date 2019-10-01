@@ -11,6 +11,10 @@
     End Sub
 
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.text_box_suma.Text = Integer.Parse(Me.text_box_num1.Text) + Integer.Parse(Me.text_box_num2.Text)
+        Dim A = Val(text_box_num1.Text)
+        Dim B = Val(text_box_num2.Text)
+        Dim C = A + B
+        Me.text_box_suma.Text = C
+        'Me.text_box_suma.Text = Integer.Parse(Me.text_box_num1.Text) + Integer.Parse(Me.text_box_num2.Text)
     End Sub
 End Class
