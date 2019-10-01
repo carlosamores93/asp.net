@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Default.aspx.vb" Inherits="Clase0._Default1" %>
-
+    
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -26,6 +26,9 @@
         <div>
             <asp:Label ID="Label1" runat="server" BackColor="Black" BorderColor="#6699FF" BorderStyle="Double" Font-Bold="True" Font-Names="Arial" Font-Size="XX-Large" ForeColor="Yellow" Text="Probando componentes de ASP.NET "></asp:Label>
             <br />
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="date_label" runat="server" Width="247px"></asp:TextBox>
             <br />
             <br />
             <asp:Label ID="Label2" runat="server" Text="Entra el primer operando:"></asp:Label>
@@ -61,7 +64,6 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button1" runat="server" Text="Púlsame" />
 &nbsp;<br />
-            <br />
 &nbsp;<table class="auto-style4">
                 <tr>
                     <td class="auto-style1">&nbsp;</td>

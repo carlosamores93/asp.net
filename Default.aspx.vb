@@ -2,7 +2,7 @@
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
+        Me.date_label.Text = "La fecha de hoy es: " & Date.Now.Day & "/" & Date.Now.Month & "/" & Date.Now.Year
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -80,9 +80,5 @@
         Dim B = Val(operando_2.Text)
         Dim C = A / B
         Me.resultado.Text = C
-    End Sub
-
-    Protected Sub operando_2_TextChanged(sender As Object, e As EventArgs) Handles operando_2.TextChanged
-
     End Sub
 End Class

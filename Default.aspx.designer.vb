@@ -32,6 +32,15 @@ Partial Public Class _Default1
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''Control date_label.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents date_label As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Control Label2.
     '''</summary>
     '''<remarks>
