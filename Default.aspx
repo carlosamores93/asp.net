@@ -14,12 +14,29 @@
             <br />
             <br />
             <br />
-            <asp:Label ID="Label2" runat="server" Text="Entra tu nombre:"></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:Label ID="Label2" runat="server" Text="Entra el primer operando:"></asp:Label>
+            &nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="text_box_num1" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Label ID="Label3" runat="server" Text="Entra el segundo operando:"></asp:Label>
+            &nbsp;
+            <asp:TextBox ID="text_box_num2" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Label ID="Label4" runat="server" Text="La suma es:"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="text_box_suma" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button2" runat="server" Text="Sumar" />
             <br />
             <br />
             <br />
-            <asp:TextBox ID="text_box_button" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:TextBox ID="text_box_button" runat="server" Width="247px"></asp:TextBox>
             <br />
             <br />
             <asp:Button ID="Button1" runat="server" Text="Púlsame" />
