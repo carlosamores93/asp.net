@@ -95,6 +95,42 @@ Partial Public Class _Default1
     Protected WithEvents Button2 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
+    '''Control Button3.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Button3 As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control Multiplicar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Multiplicar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control Dividir.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Dividir As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control Modulo.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Modulo As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''Control text_box_button.
     '''</summary>
     '''<remarks>

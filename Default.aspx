@@ -31,6 +31,14 @@
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" Text="Sumar" />
+&nbsp;
+            <asp:Button ID="Button3" runat="server" Text="Restar" />
+&nbsp;
+            <asp:Button ID="Multiplicar" runat="server" Text="Multiplicar" />
+&nbsp;
+            <asp:Button ID="Dividir" runat="server" Text="Dividir" />
+&nbsp;&nbsp;
+            <asp:Button ID="Modulo" runat="server" Text="Módulo" />
             <br />
             <br />
             <br />
