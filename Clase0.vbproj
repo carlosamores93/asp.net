@@ -132,6 +132,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Bootstrap.aspx" />
+    <Content Include="Calculadora.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -198,6 +199,13 @@
     </Compile>
     <Compile Include="Bootstrap.aspx.vb">
       <DependentUpon>Bootstrap.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calculadora.aspx.designer.vb">
+      <DependentUpon>Calculadora.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calculadora.aspx.vb">
+      <DependentUpon>Calculadora.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.vb">
