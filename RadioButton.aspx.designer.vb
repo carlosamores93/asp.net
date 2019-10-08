@@ -32,6 +32,15 @@ Partial Public Class RadioButton
     Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Control Error1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Error1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Control TextBox2.
     '''</summary>
     '''<remarks>
@@ -39,6 +48,15 @@ Partial Public Class RadioButton
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox2 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control Error2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Error2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''Control sumar.
