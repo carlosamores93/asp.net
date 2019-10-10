@@ -140,13 +140,13 @@ Partial Public Class Formulario
     Protected WithEvents tb_coments As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control TextBox13.
+    '''Control cb_terminos.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TextBox13 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cb_terminos As Global.System.Web.UI.WebControls.CheckBox
 
     '''<summary>
     '''Control btn_save_user.
