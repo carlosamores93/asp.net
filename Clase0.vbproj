@@ -132,6 +132,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Bootstrap.aspx" />
+    <Content Include="BucleFor.aspx" />
     <Content Include="Calculadora.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -202,6 +203,13 @@
     </Compile>
     <Compile Include="Bootstrap.aspx.vb">
       <DependentUpon>Bootstrap.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BucleFor.aspx.designer.vb">
+      <DependentUpon>BucleFor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BucleFor.aspx.vb">
+      <DependentUpon>BucleFor.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Calculadora.aspx.designer.vb">
