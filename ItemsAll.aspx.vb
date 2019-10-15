@@ -12,7 +12,7 @@ Public Class ItemsAll
             Dim arch2 As New StreamWriter(Me.Server.MapPath(".") & "/" & "contador.txt")
             arch2.WriteLine(conta)
             arch2.Close()
-            Me.lb_contador.Text = "TIENES UN TOTAL DE " & conta & " VISITAS"
+            Me.lb_contador.Text = "TIENES UN TOTAL DE  " & conta & " VISITAS"
         Else
             Dim arch As New StreamWriter(Me.Server.MapPath(".") & "/" & "contador.txt")
             arch.WriteLine("1")
