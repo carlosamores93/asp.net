@@ -13,8 +13,11 @@ Public Class ReadInFile
             Loop
             arch.Close()
             Me.lb_msg.Text = "Fichero leido correctamente"
+            Me.lb_msg.CssClass = "alert alert-success"
         Catch ex As Exception
             Me.lb_msg.Text = "Error to read file"
+            Me.lb_msg.CssClass = "alert alert-danger"
+
         End Try
 
 

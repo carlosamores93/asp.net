@@ -78,10 +78,14 @@
             </div>
 
         <br />
-        <div class="container text-center">
+        <div class="container ">
             
             <form id="form1" runat="server">
-
+                <div class="row"">
+                        <div class="col-sm-12 text-center">
+                        <asp:Label ID="lb_contador" runat="server"></asp:Label>
+                    </div>
+                </div>
             </form>
         </div>
 

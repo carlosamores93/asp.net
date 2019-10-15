@@ -117,11 +117,7 @@
                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ItemsAll.aspx">Volver</asp:HyperLink>
                     </div>
                     <div class="col-sm-6">
-                        <div class="alert alert-success" role="alert">
-                            
-                            <asp:Label ID="lb_msg" runat="server"></asp:Label>
-                            
-                        </div>
+                        <asp:Label ID="lb_msg" runat="server"></asp:Label>
                     </div>
                 </div>
 

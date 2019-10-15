@@ -17,15 +17,30 @@ Public Class StoreItem
             arch.WriteLine("<br />")
             arch.WriteLine("Pais:" & Me.tb_country.Text)
             arch.WriteLine("<br />")
-            arch.WriteLine("Comentarios<br />")
-            arch.WriteLine(Me.tb_coments.Text)
+            arch.WriteLine("Comentarios: " & Me.tb_coments.Text)
             arch.WriteLine("<br />")
             arch.WriteLine("<hr>")
             arch.Close()
             Me.lb_msg.Text = "Datos Guardados correctamente"
+            Me.lb_msg.CssClass = "alert alert-success"
         Catch ex As Exception
             Me.lb_msg.Text = "Error to write in file"
+            Me.lb_msg.CssClass = "alert alert-danger"
         End Try
+
+        Dim arch1 As New StreamWriter(Me.Server.MapPath(".") & "/" & "visitas.txt", True)
+
+        For i As Integer = 1 To 100
+            arch1.WriteLine("Nombre:" & i)
+            arch1.WriteLine("<br />")
+            arch1.WriteLine("Pais:" & i)
+            arch1.WriteLine("<br />")
+            arch1.WriteLine("Comentarios: " & i)
+            arch1.WriteLine("<br />")
+            arch1.WriteLine("<hr>")
+        Next
+
+        arch1.Close()
 
     End Sub
 End Class
