@@ -155,9 +155,11 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="ItemsAll.aspx" />
     <Content Include="ListBox.aspx" />
     <Content Include="ManejoCadenas.aspx" />
     <Content Include="RadioButton.aspx" />
+    <Content Include="ReadInFile.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -186,6 +188,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="WriteInFile.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -251,6 +254,13 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ItemsAll.aspx.designer.vb">
+      <DependentUpon>ItemsAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsAll.aspx.vb">
+      <DependentUpon>ItemsAll.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="ListBox.aspx.designer.vb">
       <DependentUpon>ListBox.aspx</DependentUpon>
     </Compile>
@@ -291,12 +301,26 @@
       <DependentUpon>RadioButton.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="ReadInFile.aspx.designer.vb">
+      <DependentUpon>ReadInFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReadInFile.aspx.vb">
+      <DependentUpon>ReadInFile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Site.Master.designer.vb">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.vb">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WriteInFile.aspx.designer.vb">
+      <DependentUpon>WriteInFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WriteInFile.aspx.vb">
+      <DependentUpon>WriteInFile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.vb">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

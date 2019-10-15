@@ -9,11 +9,66 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
+
+        <div class="container text-center">
+            <h1>ASP.NET integrado con Bootstrap</h1><br />
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="Aspnet">ASP.NET</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Formulario">Formulario</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="BucleFor">BucleFor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Calculadora">Calculadora</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ListBox">ListBox</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="RadioButton">RadioButton</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Default
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="DefaultOld">DefaultOld</a>
+                      <a class="dropdown-item" href="Contact">Contact</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="About">About</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+        </div>
+
+        <br />
+
+
         <form id="form1" runat="server">
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-12">
-                    <h1>ASP.NET integrado con Bootstrap</h1>
+                    
                     <br />
                     <br />
                     <br />
