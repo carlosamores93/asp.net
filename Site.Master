@@ -54,6 +54,8 @@
                         <li><a runat="server" href="~/DefaultOld">Inicio</a></li>
                         <li><a runat="server" href="~/About">Acerca de</a></li>
                         <li><a runat="server" href="~/Contact">Contacto</a></li>
+                        <li><a runat="server" href="~/Formulario">Formulario</a></li>
+                        <li><a runat="server" href="~/SQLServer">SQLServer</a></li>
                     </ul>
                 </div>
             </div>
