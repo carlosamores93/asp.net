@@ -141,7 +141,11 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Aspnet.aspx" />
+    <Content Include="CreateUser.aspx" />
+    <Content Include="CrudUser.aspx" />
     <Content Include="DefaultOld.aspx" />
+    <Content Include="DeleteUser.aspx" />
+    <Content Include="EditUser.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Formulario.aspx" />
@@ -189,7 +193,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
-    <Content Include="SQLServer.aspx" />
+    <Content Include="SearchUser.aspx" />
     <Content Include="WriteInFile.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -239,12 +243,40 @@
       <DependentUpon>Aspnet.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="CreateUser.aspx.designer.vb">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser.aspx.vb">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CrudUser.aspx.designer.vb">
+      <DependentUpon>CrudUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrudUser.aspx.vb">
+      <DependentUpon>CrudUser.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="DefaultOld.aspx.vb">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>DefaultOld.aspx</DependentUpon>
     </Compile>
     <Compile Include="DefaultOld.aspx.designer.vb">
       <DependentUpon>DefaultOld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUser.aspx.designer.vb">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUser.aspx.vb">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="EditUser.aspx.designer.vb">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.aspx.vb">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Formulario.aspx.designer.vb">
       <DependentUpon>Formulario.aspx</DependentUpon>
@@ -310,19 +342,19 @@
       <DependentUpon>ReadInFile.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="SearchUser.aspx.designer.vb">
+      <DependentUpon>SearchUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchUser.aspx.vb">
+      <DependentUpon>SearchUser.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Site.Master.designer.vb">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.vb">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SQLServer.aspx.designer.vb">
-      <DependentUpon>SQLServer.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SQLServer.aspx.vb">
-      <DependentUpon>SQLServer.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="WriteInFile.aspx.designer.vb">
       <DependentUpon>WriteInFile.aspx</DependentUpon>

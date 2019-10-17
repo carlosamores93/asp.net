@@ -172,9 +172,7 @@
 
                 <div class="form-group row">
                     <div class="col-sm-12">
-                        
                         <asp:Button ID="btn_save_user"  class="btn btn-primary" runat="server" Text="Guardar usuario" />
-                        
                     </div>
                 </div>
 

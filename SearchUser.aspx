@@ -1,11 +1,11 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="SQLServer.aspx.vb" Inherits="Clase0.SQLServer" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="SearchUser.aspx.vb" Inherits="Clase0.SearchUser" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head runat="server">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title>SQL Server</title>
+        <title>Search USER</title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,7 +16,7 @@
     <body>
 
         <div class="container text-center">
-                <h1> SQL Server </h1>
+                <h1> Search USER </h1>
                 <br />
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                   <a class="navbar-brand" href="#">Navbar</a>
@@ -28,6 +28,18 @@
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item">
                         <a class="nav-link" href="Aspnet">ASP.NET</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         CRUD USERS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                          <a class="dropdown-item" href="CrudUser">All Users</a>
+                          <a class="dropdown-item" href="CreateUser">Create user</a>
+                          <a class="dropdown-item" href="EditUser">Edit user</a>
+                          <a class="dropdown-item" href="SearchUser">Search user</a>
+                          <a class="dropdown-item" href="DeleteUser">Delete user</a>
+                        </div>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,29 +76,16 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="DefaultOld">DefaultOld</a>
                           <a class="dropdown-item" href="Contact">Contact</a>
-                          <div class="dropdown-divider"></div>
                           <a class="dropdown-item" href="About">About</a>
                         </div>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                      </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
                   </div>
                 </nav>
             </div>
         <br />
         <div class="container ">
-            <form id="form1" runat="server">
-                <div class="row"">
-                        <div class="col-sm-12 text-center">
-                    </div>
-                </div>
-            </form>
+
         </div>
 
         <!-- Optional JavaScript -->
