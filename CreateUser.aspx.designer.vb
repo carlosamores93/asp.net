@@ -75,4 +75,13 @@ Partial Public Class CreateUser
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btn_save_user As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control lb_msg.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lb_msg As Global.System.Web.UI.WebControls.Label
 End Class

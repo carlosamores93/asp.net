@@ -119,10 +119,11 @@
                     </div>
 
                      <div class="form-group row">
-                        <div class="col-sm-12">
-                        
+                         <div class="col-sm-6">
                             <asp:Button ID="btn_save_user"  class="btn btn-primary" runat="server" Text="Guardar usuario" />
-                        
+                        </div>
+                        <div class="col-sm-6">
+                            <asp:Label ID="lb_msg" runat="server"></asp:Label>
                         </div>
                     </div>
             </form>
