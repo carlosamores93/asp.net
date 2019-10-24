@@ -17,12 +17,10 @@ Public Class CrudUser
             'Me.SqlDataSource1.InsertParameters("password").DefaultValue = "1111111111111111111111111"
             'Me.SqlDataSource1.InsertParameters("mail").DefaultValue = "111111111111@umcm.es"
             Me.SqlDataSource1.Insert()
-            Me.lb_msg.Text = "Usuario creado correctamente"
-            Me.lb_msg.CssClass = "alert alert-success"
+            Me.lb_msg.Text = "Usuario " & Me.tb_name.Text & " creado correctamente"
 
         Catch ex As SqlException
             Me.lb_msg.Text = Date.Now.ToString & "Error al crear el usuario" & ex.Message
-            Me.lb_msg.CssClass = "alert alert-danger"
         End Try
     End Sub
 
@@ -32,15 +30,18 @@ Public Class CrudUser
             Dim cant As Integer
             cant = Me.SqlDataSource1.Delete
             If cant = 1 Then
-                Me.lb_msg.Text = "Usuario borrado correctamente"
-                Me.lb_msg.CssClass = "alert alert-success"
+                Me.lb_msg.Text = "Usuario " & Me.tb_name.Text & " borrado correctamente"
+                Me.tb_password.Text = ""
+                Me.tb_email.Text = ""
+                Me.tb_name.Text = ""
             Else
-                Me.lb_msg.Text = Date.Now.ToString & "Error al borrar el usuario "
-                Me.lb_msg.CssClass = "alert alert-danger"
+                Me.lb_msg.Text = Date.Now.ToString & "Error al borrar el usuario " & Me.tb_name.Text
+                Me.tb_password.Text = ""
+                Me.tb_email.Text = ""
+                Me.tb_name.Text = ""
             End If
         Catch ex As SqlException
             Me.lb_msg.Text = Date.Now.ToString & " Error al borrar el usuario"
-            Me.lb_msg.CssClass = "alert alert-danger"
         End Try
 
     End Sub
@@ -54,15 +55,16 @@ Public Class CrudUser
             Dim cant As Integer
             cant = Me.SqlDataSource1.Update()
             If cant = 1 Then
-                Me.lb_msg.Text = "Usuario actualzado correctamente"
-                Me.lb_msg.CssClass = "alert alert-success"
+                Me.lb_msg.Text = "Usuario " & Me.tb_name.Text & " actualizado correctamente"
+                Me.tb_password.Text = ""
+                Me.tb_email.Text = ""
             Else
-                Me.lb_msg.Text = Date.Now.ToString & "Error al actualizar el usuario "
-                Me.lb_msg.CssClass = "alert alert-danger"
+                Me.lb_msg.Text = Date.Now.ToString & "Error al actualizar el usuario  " & Me.tb_name.Text
+                Me.tb_password.Text = ""
+                Me.tb_email.Text = ""
             End If
         Catch ex As SqlException
             Me.lb_msg.Text = Date.Now.ToString & " Error al actualizar el usuario" & ex.Message
-            Me.lb_msg.CssClass = "alert alert-danger"
         End Try
 
 
@@ -78,17 +80,14 @@ Public Class CrudUser
             If datos.Read Then
                 Me.tb_password.Text = datos("password")
                 Me.tb_email.Text = datos("mail")
-                Me.lb_msg.Text = "Usuario encontrado correctamente"
-                Me.lb_msg.CssClass = "alert alert-success"
+                Me.lb_msg.Text = "Usuario " & Me.tb_name.Text & " encontrado correctamente"
             Else
                 Me.tb_password.Text = ""
                 Me.tb_email.Text = ""
-                Me.lb_msg.Text = Date.Now.ToString & "Error al buscar el usuario "
-                Me.lb_msg.CssClass = "alert alert-danger"
+                Me.lb_msg.Text = Date.Now.ToString & "Error al buscar el usuario " & Me.tb_name.Text
             End If
         Catch ex As SqlException
             Me.lb_msg.Text = Date.Now.ToString & " Error al buscar el usuario" & ex.Message
-            Me.lb_msg.CssClass = "alert alert-danger"
         End Try
     End Sub
 End Class
