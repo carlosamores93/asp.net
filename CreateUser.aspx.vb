@@ -27,8 +27,8 @@ Public Class CreateUser
             End If
             'Dim insert_users As New SqlCommand("insert into usuarios(id,nombre,password,mail,estado,created_at) values(1, '" & Me.tb_name.Text & "','" & Me.tb_password.Text & "','" & Me.tb_email.Text & "'," & status & ",'" & Date.Now & "')", conexion)
             'Dim insert_users As New SqlCommand("insert into usuarios(id,nombre,password,mail,estado) values('1', '" & Me.tb_name.Text & "','" & Me.tb_password.Text & "','" & Me.tb_email.Text & "','" & status & "')", conexion)
-            Dim insert_users As New SqlCommand("insert into usuarios(id,nombre,password,mail,estado,created_at) values('1', '" & Me.tb_name.Text & "','" & Me.tb_password.Text & "','" & Me.tb_email.Text & "','" & status & "','" & Date.Now.ToString("yyyy-MM-dd HH:mm:ss") & "')", conexion)
-            insert_users.ExecuteNonQuery()
+            'Dim insert_users As New SqlCommand("insert into usuarios(id,nombre,password,mail,estado,created_at) values('1', '" & Me.tb_name.Text & "','" & Me.tb_password.Text & "','" & Me.tb_email.Text & "','" & status & "','" & Date.Now.ToString("yyyy-MM-dd HH:mm:ss") & "')", conexion)
+            'insert_users.ExecuteNonQuery()
 
             conexion.Close()
             Me.lb_msg.Text = "Usuario creado correctamente"
