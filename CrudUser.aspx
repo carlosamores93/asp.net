@@ -85,7 +85,47 @@
             </div>
         <br />
         <div class="container ">
+            <form id="form1" runat="server">
 
+                <div class="form-group row text-right">
+                        <label for="inputEmail3" class="col-sm-6 col-form-label">Name</label>
+                        <div class="col-sm-4">
+                            <asp:TextBox ID="tb_name" class="form-control" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+
+                    <div class="form-group row  text-right">
+                        <label for="inputEmail3" class="col-sm-6 col-form-label">Password</label>
+                        <div class="col-sm-4">
+                            <asp:TextBox ID="tb_password" class="form-control" runat="server" TextMode="Password"></asp:TextBox>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row  text-right">
+                        <label for="inputEmail3" class="col-sm-6 col-form-label">Emails</label>
+                        <div class="col-sm-4">
+                            <asp:TextBox ID="tb_email" class="form-control" runat="server" TextMode="Email"></asp:TextBox>
+                        </div>
+                    </div>
+                     <div class="form-group row">
+
+
+                         <div class="col-sm-6">
+                            <asp:Button ID="btn_save_user"  class="btn btn-primary" runat="server" Text="Guardar usuario" />
+                        &nbsp;<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AdministracionConnectionString %>" InsertCommand="INSERT INTO usuario(nombre, password, mail) VALUES ('xxxxxxxxxxxx', 'xxxxxxx', 'xx@mail.x')" SelectCommand="SELECT [nombre], [password], [mail] FROM [usuario]">
+                                 <InsertParameters>
+                                     <asp:Parameter Name="nombre" />
+                                     <asp:Parameter Name="password" />
+                                     <asp:Parameter Name="mail" />
+                                 </InsertParameters>
+                             </asp:SqlDataSource>
+                        </div>
+                        <div class="col-sm-6">
+                            <asp:Label ID="lb_msg" runat="server"></asp:Label>
+                        </div>
+                    </div>
+            </form>
         </div>
 
         <!-- Optional JavaScript -->
