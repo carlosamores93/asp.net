@@ -10,7 +10,6 @@ Public Class CreateUser
 
         Try
 
-
             Dim s As String
             s = ConfigurationManager.ConnectionStrings("administracion").ConnectionString
             Dim conexion As New SqlConnection(s)
