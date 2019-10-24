@@ -113,7 +113,7 @@
 
                          <div class="col-sm-8">
                             <asp:Button ID="btn_save_user"  class="btn btn-primary" runat="server" Text="Guardar usuario" />
-                        &nbsp;<asp:Button ID="btn_search_user"  class="btn btn-info" runat="server" Text="Buscar usuario" />
+                        &nbsp;<asp:Button ID="btn_search_user"  class="btn btn-default" runat="server" Text="Buscar usuario" />
                         &nbsp;<asp:Button ID="btn_editar_user"  class="btn btn-warning" runat="server" Text="Modificar usuario" />
                         &nbsp;<asp:Button ID="btn_borrar_user"  class="btn btn-danger" runat="server" Text="Borrar usuario" />
                         &nbsp;&nbsp;<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AdministracionConnectionString %>" InsertCommand="INSERT INTO usuario(nombre, password, mail) VALUES (@nombre, @password, @mail)" SelectCommand="select * from usuario where nombre=@nombre" DeleteCommand="delete from usuario where nombre=@nombre" UpdateCommand="UPDATE usuario SET password = @password, mail = @mail WHERE (nombre = @nombre)">
