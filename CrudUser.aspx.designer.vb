@@ -59,6 +59,33 @@ Partial Public Class CrudUser
     Protected WithEvents btn_save_user As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
+    '''Control btn_search_user.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btn_search_user As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control btn_editar_user.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btn_editar_user As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control btn_borrar_user.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btn_borrar_user As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''Control SqlDataSource1.
     '''</summary>
     '''<remarks>
