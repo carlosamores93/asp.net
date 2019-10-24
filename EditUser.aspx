@@ -105,7 +105,7 @@
                     <div class="form-group row  text-right">
                         <label for="inputEmail3" class="col-sm-6 col-form-label">Password</label>
                         <div class="col-sm-4">
-                            <asp:TextBox ID="tb_password" class="form-control" runat="server" TextMode="Password"></asp:TextBox>
+                            <asp:TextBox ID="tb_password" class="form-control" runat="server"></asp:TextBox>
                         </div>
                     </div>
 
