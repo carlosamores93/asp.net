@@ -72,22 +72,28 @@ Public Class CrudUser
     End Sub
 
     Protected Sub btn_search_user_Click(sender As Object, e As EventArgs) Handles btn_search_user.Click
-        Try
-            Me.SqlDataSource1.SelectParameters("nombre").DefaultValue = Me.tb_name.Text
-            Me.SqlDataSource1.DataSourceMode = SqlDataSourceMode.DataReader
-            Dim datos As SqlDataReader
-            datos = Me.SqlDataSource1.Select(DataSourceSelectArguments.Empty)
-            If datos.Read Then
-                Me.tb_password.Text = datos("password")
-                Me.tb_email.Text = datos("mail")
-                Me.lb_msg.Text = "Usuario " & Me.tb_name.Text & " encontrado correctamente"
-            Else
-                Me.tb_password.Text = ""
-                Me.tb_email.Text = ""
-                Me.lb_msg.Text = Date.Now.ToString & "Error al buscar el usuario " & Me.tb_name.Text
-            End If
-        Catch ex As SqlException
-            Me.lb_msg.Text = Date.Now.ToString & " Error al buscar el usuario" & ex.Message
-        End Try
+        If Me.tb_name.Text <> "" Then
+            Try
+                Me.SqlDataSource1.SelectParameters("nombre").DefaultValue = Me.tb_name.Text
+                Me.SqlDataSource1.DataSourceMode = SqlDataSourceMode.DataReader
+                Dim datos As SqlDataReader
+                datos = Me.SqlDataSource1.Select(DataSourceSelectArguments.Empty)
+                If datos.Read Then
+                    Me.tb_password.Text = datos("password")
+                    Me.tb_email.Text = datos("mail")
+                    Me.lb_msg.Text = "Usuario " & Me.tb_name.Text & " encontrado correctamente"
+                Else
+                    Me.tb_password.Text = ""
+                    Me.tb_email.Text = ""
+                    Me.lb_msg.Text = Date.Now.ToString & "Error al buscar el usuario " & Me.tb_name.Text
+                End If
+            Catch ex As SqlException
+                Me.lb_msg.Text = Date.Now.ToString & " Error al buscar el usuario" & ex.Message
+            End Try
+        Else
+            Me.lb_msg.Text = " Error al buscar el usuario "
+        End If
+
+
     End Sub
 End Class
