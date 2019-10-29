@@ -89,14 +89,15 @@
                     <div class="form-group row text-right">
                         <label for="inputEmail3" class="col-sm-6 col-form-label">Name</label>
                         <div class="col-sm-4">
-                            <asp:TextBox ID="tb_name" class="form-control" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="tb_name" class="form-control" runat="server" required></asp:TextBox>
                         </div>
                     </div>
 
                     <div class="form-group row  text-right">
                         <label for="inputEmail3" class="col-sm-6 col-form-label">Password</label>
                         <div class="col-sm-4">
-                            <asp:TextBox ID="tb_password" class="form-control" runat="server" TextMode="Password"></asp:TextBox>
+                            <asp:TextBox ID="tb_password" class="form-control" runat="server" TextMode="Password" required></asp:TextBox>
+                        &nbsp;<asp:RequiredFieldValidator ID="rfv_pass" runat="server" ControlToValidate="tb_password" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
                         </div>
                     </div>
 
@@ -104,7 +105,7 @@
                     <div class="form-group row  text-right">
                         <label for="inputEmail3" class="col-sm-6 col-form-label">Emails</label>
                         <div class="col-sm-4">
-                            <asp:TextBox ID="tb_email" class="form-control" runat="server" TextMode="Email"></asp:TextBox>
+                            <asp:TextBox ID="tb_email" class="form-control" runat="server" TextMode="Email" required></asp:TextBox>
                         </div>
                     </div>
 

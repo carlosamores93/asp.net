@@ -18,7 +18,7 @@ Public Class StoreFile
                     'Me.FileUpload1.SaveAs(Session("ruta"))
                     Me.lb_msg.Text = "Archivo sobreescrito"
                 Else
-                    Me.lb_msg.Text = "Existe un archivo con ese nombre: "
+                    Me.lb_msg.Text = "Existe un archivo con ese nombre"
                 End If
             Else
                 Me.FileUpload1.SaveAs(Server.MapPath(".") & pathFile & Me.FileUpload1.FileName)
