@@ -194,6 +194,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="SearchUser.aspx" />
+    <Content Include="StoreFile.aspx" />
     <Content Include="WriteInFile.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -355,6 +356,13 @@
     <Compile Include="Site.Master.vb">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StoreFile.aspx.designer.vb">
+      <DependentUpon>StoreFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StoreFile.aspx.vb">
+      <DependentUpon>StoreFile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="WriteInFile.aspx.designer.vb">
       <DependentUpon>WriteInFile.aspx</DependentUpon>
